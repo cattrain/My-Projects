@@ -4,21 +4,24 @@ using namespace std;
 
 int main()
 {
+    //You don't have to declare variables at the top. It is usually a good idea to declare as locally as possible.
     float one;
     float two;
     float three;
     int four;
 
+    //in to the right, out to the left
     cin >> one;
     cin >> two;
     three = one + two;
     cout << three;
 
+    //if checks the variable in the parentheses for true or false, and runs inside the curly brackets if true.
     if (three<10)
     {
         four = 1;
     }
-
+    //else if must be after if and runs if the if before is false
     else if (three<20)
     {
         four = 2;
@@ -38,11 +41,14 @@ int main()
     {
         four = 5;
     }
+    //else is at the end and will always run if all else fails
     else
     {
         four = 6;
     }
 
+    //a switch statement will start at the first point that returns true, and end when it sees a "break;".
+    //"default:" can be used as a catch all.
     switch (four)
     {
         case 1: cout << "one";
@@ -51,6 +57,6 @@ int main()
         case 4: cout << "four";
         case 5: cout << "five";
     }
-
+    //return 0 is not required, but should probably be included in main. return 0 returns an exit status of true
     return 0;
 }
