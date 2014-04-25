@@ -1,7 +1,6 @@
 //#include <name> for libraries included in the compiler
 //#include "name" for other files in the same directory
 #include <iostream>
-#include <sstream>
 #include "version.h"
 
 
@@ -12,11 +11,9 @@ int main()
 {
     //You don't have to declare variables at the top. It is usually a good idea to declare as locally as possible.
     string BUILD_VERSION;
-    std::stringstream BUILD_DATE;
 
-    BUILD_DATE = AutoVersion::MONTH << '-' << AutoVersion::DATE << '-' << AutoVersion::YEAR;
     BUILD_VERSION = AutoVersion::FULLVERSION_STRING;
-    cout << "Build number: " << BUILD_VERSION << endl << "Built on " << BUILD_DATE << endl;
+    cout << "Build number: " << BUILD_VERSION << endl;
 
     float one;
     float two;
