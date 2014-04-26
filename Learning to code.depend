@@ -1,7 +1,13 @@
 # depslib dependency file v1.0
-1398447490 source:c:\users\cyndicow\documents\github\my-projects\my-projects.cpp
+1398538502 source:c:\users\cyndicow\documents\github\my-projects\my-projects.cpp
 	<iostream>
 	"version.h"
+	"learn.h"
 
-1398474760 c:\users\cyndicow\documents\github\my-projects\version.h
+1398538734 c:\users\cyndicow\documents\github\my-projects\version.h
+
+1398538734 c:\users\cyndicow\documents\github\my-projects\learn.h
+	<iostream>
+	<string>
+	"version.h"
 

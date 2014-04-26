@@ -2,18 +2,21 @@
 //#include "name" for other files in the same directory
 #include <iostream>
 #include "version.h"
+#include "learn.h"
 
 
 //the std namespace includes the standard object files, like iostream and stdio
 using namespace std;
 
-int main()
-{
-    //You don't have to declare variables at the top. It is usually a good idea to declare as locally as possible.
-    string BUILD_VERSION;
+//sum needs to be a float to return a float
+float sum (float a,float b){
+    return a + b;
+}
 
-    BUILD_VERSION = AutoVersion::FULLVERSION_STRING;
-    cout << "Build number: " << BUILD_VERSION << endl;
+int main(){
+    //You don't have to declare variables at the top. It is usually a good idea to declare as locally as possible.
+
+    cout << "Build number: " << AutoVersion::FULLVERSION_STRING << endl << "Built on: " << VersionStyling() << AutoVersion::MONTH;
 
     float one;
     float two;
@@ -23,7 +26,8 @@ int main()
     //in to the right, out to the left
     cin >> one;
     cin >> two;
-    three = one + two;
+    // calling another function the value will equal whatever the is returned
+    three = sum(one, two);
     cout << three;
 
     //if checks the variable in the parentheses for true or false, and runs inside the curly brackets if true.

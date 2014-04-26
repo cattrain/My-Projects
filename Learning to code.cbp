@@ -33,6 +33,7 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="My-Projects.cpp" />
+		<Unit filename="learn.h" />
 		<Unit filename="version.h" />
 		<Extensions>
 			<code_completion />
