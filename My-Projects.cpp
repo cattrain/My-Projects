@@ -16,7 +16,8 @@ float sum (float a,float b){
 int main(){
     //You don't have to declare variables at the top. It is usually a good idea to declare as locally as possible.
 
-    cout << "Build number: " << AutoVersion::FULLVERSION_STRING << endl << "Built on: " << VersionStyling() << " " << AutoVersion::DATE << " " << AutoVersion::YEAR << endl << "=-----------------------------------------------=" << endl;
+    cout << "Build number: " << AutoVersion::FULLVERSION_STRING << endl << "Built on: " << VersionStyling() << " "
+        << AutoVersion::DATE << " " << AutoVersion::YEAR << endl << "=-----------------------------------------------=" << endl;
 
     float one;
     float two;

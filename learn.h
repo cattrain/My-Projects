@@ -13,7 +13,7 @@ string VersionStyling(){
     input = AutoVersion::MONTH[1] - AutoVersion::MONTH[0];
     string Month;
 
-    switch(4){
+    switch(input){
         case 1: Month ="January";break;
         case 2: Month ="February";break;
         case 3: Month ="March";break;
