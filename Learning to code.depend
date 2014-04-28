@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1398538502 source:c:\users\cyndicow\documents\github\my-projects\my-projects.cpp
+1398703324 source:c:\users\cyndicow\documents\github\my-projects\my-projects.cpp
 	<iostream>
 	"version.h"
 	"learn.h"
 
-1398538734 c:\users\cyndicow\documents\github\my-projects\version.h
+1398703945 c:\users\cyndicow\documents\github\my-projects\version.h
 
-1398538734 c:\users\cyndicow\documents\github\my-projects\learn.h
+1398703945 c:\users\cyndicow\documents\github\my-projects\learn.h
 	<iostream>
 	<string>
 	"version.h"
