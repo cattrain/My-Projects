@@ -10,24 +10,23 @@ using namespace std;
 string VersionStyling(){
 
     int input;
-    input = *AutoVersion::MONTH;
+    input = AutoVersion::MONTH[1] - AutoVersion::MONTH[0];
     string Month;
 
-    cout << *AutoVersion::MONTH << " " << &AutoVersion::MONTH << " " << AutoVersion::MONTH << " " << input << " test" << endl;
-
-    switch(input){
-        case 01: Month ="January";
-        case 02: Month ="February";
-        case 03: Month ="March";
-        case 04: Month ="April";
-        case 05: Month ="May";
-        case 06: Month ="June";
-        case 07: Month ="July";
-        case 8: Month ="August";
-        case 9: Month ="September";
-        case 10: Month ="October";
-        case 11: Month ="November";
-        case 12: Month ="December";
+    switch(4){
+        case 1: Month ="January";break;
+        case 2: Month ="February";break;
+        case 3: Month ="March";break;
+        case 4: Month ="April";break;
+        case 5: Month ="May";break;
+        case 6: Month ="June";break;
+        case 7: Month ="July";break;
+        case 8: Month ="August";break;
+        case 9: Month ="September";break;
+        case 10: Month ="October";break;
+        case 11: Month ="November";break;
+        case 12: Month ="December";break;
+        default: Month ="ERROR";break;
     }
 
     return Month;
